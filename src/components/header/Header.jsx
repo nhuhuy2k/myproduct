@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 
 import { ButtonLink } from "../button/Button";
-import Images from "../../asset/Images";
+import Images from "../../asset/images.js";
 
 const cx = classNames.bind();
 
