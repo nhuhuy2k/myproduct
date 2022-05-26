@@ -1,7 +1,10 @@
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      transition: "width .5s ease",
+    },
     colors: {
       white: "#ffffff",
       red: "#E50913",
