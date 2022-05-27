@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import { ButtonLink } from "../button/Button";
-import Images from "../../asset/images.js";
+import Logo from "../logo/Logo";
 
 const cx = classNames.bind();
 
@@ -51,19 +50,7 @@ function Header() {
         `${classShrinkHeader}`
       )}
     >
-      <Link
-        to={listPages[0].path}
-        className="flex justify-center items-center "
-      >
-        <img
-          src={Images.logo}
-          alt="logo-themovie"
-          className="w-11 h-8 sm:w-20 sm:h-12"
-        />
-        <span className="text-xl ml-2 font-bold italic border-b-2 border-b-red hover:text-red sm:text-3xl">
-          TheMovie
-        </span>
-      </Link>
+      <Logo/>
       <div className="fixed bottom-0 left-0 right-0 flex justify-between items-center font-semibold text-base px-4 h-11 bg-black  sm:bg-opacity-0  sm:static sm:px-0">
         {listPages.map((item, index) => {
           return (
